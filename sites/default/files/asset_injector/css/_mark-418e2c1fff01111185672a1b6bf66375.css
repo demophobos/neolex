@@ -1,0 +1,11 @@
+.grammar-mark{
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.expressive-mark, .functional-mark, .stylistic-mark{
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+}

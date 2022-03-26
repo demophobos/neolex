@@ -1,0 +1,29 @@
+.btn-lat-group{
+  height:25px;
+  margin-right:-10px !important;
+}
+.btn-num-group{
+  height:25px;
+}
+
+.btn-lat-group > button{
+  color: white;
+  font-weight: 700;
+  padding-top: 1px;
+  background-color: #537072 !important;
+}
+
+.btn-num-group > button{
+  color: white;
+  font-weight: 700;
+  padding-top: 1px;
+  background-color: #537072 !important;
+}
+
+.dropdown-menu {
+    min-width: 3em !important;
+}
+.dropdown-item {
+    color: white;
+    font-weight: 700;
+}

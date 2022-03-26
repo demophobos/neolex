@@ -1,0 +1,12 @@
+.moto {
+    font-family: ui-monospace;
+    text-transform: uppercase;
+    font-size: 7px;
+    letter-spacing: 6.5px;
+    color: #fff3cd;
+    font-weight: 900;
+}
+
+.slogan{
+  letter-spacing: 4px;
+}

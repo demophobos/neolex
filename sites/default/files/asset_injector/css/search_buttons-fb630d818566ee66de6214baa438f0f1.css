@@ -1,0 +1,10 @@
+#edit-submit-search, #edit-submit-search--2{
+  width:100%;
+}
+
+#reset-search-filters{
+  width:100%;
+  color: #1b1e21;
+  background-color: rgba(0,0,0,0.03);
+  border-color: #c6c8ca;
+}

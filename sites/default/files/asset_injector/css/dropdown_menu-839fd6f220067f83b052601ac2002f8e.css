@@ -1,0 +1,12 @@
+.dropdown-menu{
+  background-color: #537072 !important;
+}
+
+.dropdown-menu-center {
+    right: auto !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+    margin-top: 30px;
+}

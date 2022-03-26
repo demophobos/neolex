@@ -1,0 +1,10 @@
+.pager{
+  margin-top: 15px;
+}
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+}

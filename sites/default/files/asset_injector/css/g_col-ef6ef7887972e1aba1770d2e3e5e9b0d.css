@@ -1,0 +1,4 @@
+.views-view-grid.vertical.cols-4{
+  display: flex;
+  justify-content: space-between;
+}
