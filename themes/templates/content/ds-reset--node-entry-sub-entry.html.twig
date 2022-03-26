@@ -1,0 +1,35 @@
+{% set entryType = content.field_type.0["#plain_text"]|trim %}
+{% set index = content.field_index.0 %}
+{% set id = node.id %}
+
+<div class="sub-entry pt-1">
+	<a data-toggle="collapse" href="#collapse_{{id}}" aria-expanded="false" aria-controls="collapse_{{id}}">
+		<h5 class="sub-entry-title">
+			{% spaceless %}
+				{% if entryType == "44" %}
+					{% if content.field_hyphen_position.0 %}
+						{% set hp = content.field_hyphen_position.0["#markup"]|trim %}
+						{% if hp == 'right' %}
+							{% set entryTitle = node.label ~ '-' %}
+						{% elseif hp == 'left' %}
+							{% set entryTitle = '-' ~ node.label %}
+						{% else %}
+							{% set entryTitle = '-' ~ node.label ~ '-'  %}
+						{% endif %}
+					{% endif %}
+				{% else %}
+					{% set entryTitle = title %}
+				{% endif %}
+				<span class="headword-type-{{entryType}}">{{ entryTitle }}</span>
+				<sup>{{index}}</sup>
+				<span class="government">{{content.field_government}}</span>
+			{% endspaceless %}
+		</h5>
+	</a>
+	<div class="collapse show sub-entry-region" id="collapse_{{id}}">
+		<div class="entry-definition-section">
+			{{ content.field_senses }}
+			{{ content.field_references }}
+		</div>
+	</div>
+</div>

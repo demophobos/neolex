@@ -1,0 +1,10 @@
+{% if content.field_curriculum_ref.0["#url_title"] %}
+	<a href='{{ content.field_curriculum_ref.0["#url_title"] }}' target='_blank'>
+		{{content.field_real_name}}
+	</a>
+{% else %}
+	{{content.field_real_name}}
+{% endif %}
+<span class="badge border">{{content.field_degree}}</span>
+<span class="badge border">{{content.field_position}}</span>
+<span class="badge border">{{content.field_work_place}}</span>

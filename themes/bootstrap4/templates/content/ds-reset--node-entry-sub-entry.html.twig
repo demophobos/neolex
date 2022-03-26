@@ -1,0 +1,15 @@
+{% set id = node.id %}
+
+<div class="sub-entry pt-1">
+	<a data-toggle="collapse" href="#collapse_{{id}}" aria-expanded="false" aria-controls="collapse_{{id}}">
+		<h5 class="sub-entry-title">
+			{% include 'ds-reset--node-entry-short-title.html.twig' %}
+		</h5>
+	</a>
+	<div class="collapse show sub-entry-region" id="collapse_{{id}}">
+		<div class="entry-definition-section">
+			{{ content.field_senses }}
+			{{ content.field_references }}
+		</div>
+	</div>
+</div>

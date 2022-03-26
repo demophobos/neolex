@@ -1,0 +1,44 @@
+{% set entryType = content.field_type.0["#plain_text"]|trim %}
+{% set index = content.field_index.0 %}
+
+<div class="card entry-card entry-status{{node.isPublished()}}">
+	<div class="card-header text-white">
+		<h5 class="card-title">
+			{% spaceless %}
+				{% if entryType == "44" %}
+					{% if content.field_hyphen_position.0 %}
+						{% set hp = content.field_hyphen_position.0["#markup"]|trim %}
+						{% if hp == 'right' %}
+							{% set entryTitle = node.label ~ '-' %}
+						{% elseif hp == 'left' %}
+							{% set entryTitle = '-' ~ node.label %}
+						{% else %}
+							{% set entryTitle = '-' ~ node.label ~ '-'  %}
+						{% endif %}
+					{% endif %}
+				{% else %}
+					{% set entryTitle = title %}
+				{% endif %}
+				<span class="headword-type-{{entryType}}">{{ entryTitle }}</span>
+				<sup>{{index}}</sup>
+				<span class="government">{{content.field_government}}</span>
+				{% if content.field_headword_grammar_items.0 %}
+					<span class="header-definition">
+						{% for key, value in node.field_headword_grammar_items.value %}
+							{{content.field_headword_grammar_items[key]}}
+						{% endfor %}
+					</span>
+				{% endif %}
+			{% endspaceless %}
+		</h5>
+	</div>
+	<div class="card-body">
+		{{ content.field_senses }}
+		{{content.field_references }}
+	</div>
+	<div class="card-footer">
+		{{ content.field_sort_title }}
+		{{ content.field_year }}
+	</div>
+	{{ content.content_moderation_control }}
+</div>

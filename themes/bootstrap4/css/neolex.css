@@ -1,0 +1,74 @@
+body {
+    background-color: ivory;
+}
+
+
+/* Bootstrap */
+
+.alert-primary {
+    background-color: #8e9b97 !important;
+    color: white !important;
+}
+
+.bg-primary {
+    background-color: #2c4a52 !important;
+}
+
+
+/* Vocable */
+
+.vocable-title {
+    text-align: center;
+}
+
+
+/* Alphabet attachement */
+
+.btn-lat-group {
+    height: 25px;
+    margin-right: -10px !important;
+}
+
+.btn-num-group {
+    height: 25px;
+}
+
+.btn-lat-group>button {
+    color: white;
+    font-weight: 700;
+    padding-top: 1px;
+    background-color: #537072 !important;
+}
+
+.btn-num-group>button {
+    color: white;
+    font-weight: 700;
+    padding-top: 1px;
+    background-color: #537072 !important;
+}
+
+.dropdown-menu {
+    min-width: 3em !important;
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 700;
+}
+
+
+/* Marks */
+
+.grammar-mark {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.expressive-mark,
+.functional-mark,
+.stylistic-mark {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+}

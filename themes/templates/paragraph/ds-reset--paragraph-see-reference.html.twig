@@ -1,0 +1,13 @@
+<div class="see-references">
+	<span data-toggle="tooltip" data-placement="left" title="Смотри" class="term-tooltip">
+		<img src="/themes/images/c-circle.png" class="term-image">
+	</span>
+	{% for key, items in content.field_see_reference_value if key|first != '#'%}
+		{% set id = items["#cache"].keys[2] %}
+		<span class="badge border see-reference">
+			<a href="/node/{{id}}" class="use-ajax" data-dialog-type="bootstrap4_modal" data-dialog-options="{&quot;dialogClasses&quot;:&quot;modal-dialog-centered modal-dialog-scrollable modal-lg entry-modal relation-dialog&quot;,&quot;width&quot;:&quot;800&quot;,&quot;dialogShowHeader&quot;: false}">
+				{{ content.field_see_reference_value[key] }}
+			</a>
+		</span>
+	{% endfor %}
+</div>

@@ -1,0 +1,112 @@
+{% if q is not empty %}
+	{{ q }}
+{% endif %}
+
+<div class="card-search-filter">
+	{{ form.title }}
+	<div class="types">
+		{{ form.field_type_target_id }}
+	</div>
+	<div class="has-new-value alert border pb-0 pt-0">
+		{{ form.field_has_new_value_value }}
+	</div>
+	<div class="occasionalism alert border pb-0 pt-0">
+		{{ form.field_is_occasionalism_value }}
+	</div>
+	<div class="card">
+		<div class="btn-dd-header pl-2 pr-0" id="grammarMarks">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseGrammarMarks" aria-expanded="false" aria-controls="collapseGrammarMarks">
+				<span class="btn-dd-text">- Грамматические пометы -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseGrammarMarks" class="collapse" aria-labelledby="grammarMarks">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_grammar_mark_value_target_id }}
+			</div>
+		</div>
+	</div>
+		<div class="card mt-3">
+		<div class="btn-dd-header pl-2 pr-0" id="stylisticMarks">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseStylisticMarks" aria-expanded="false" aria-controls="collapseStylisticMarks">
+				<span class="btn-dd-text">- Стилистические пометы -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseStylisticMarks" class="collapse" aria-labelledby="stylisticMarks">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_stylistic_mark_value_target_id }}
+			</div>
+		</div>
+	</div>
+	<div class="card mt-3">
+		<div class="btn-dd-header pl-2 pr-0" id="expressiveMarks">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseExpressiveMarks" aria-expanded="false" aria-controls="collapseExpressiveMarks">
+				<span class="btn-dd-text">- Экспрессивные пометы -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseExpressiveMarks" class="collapse" aria-labelledby="expressiveMarks">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_expressive_mark_value_target_id }}
+			</div>
+		</div>
+	</div>
+		<div class="card mt-3">
+		<div class="btn-dd-header pl-2 pr-0" id="functionalMarks">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseFunctionalMarks" aria-expanded="false" aria-controls="collapseFunctionalMarks">
+				<span class="btn-dd-text">- Функциональные пометы -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseFunctionalMarks" class="collapse" aria-labelledby="functionalMarks">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_functional_mark_value_target_id }}
+			</div>
+		</div>
+	</div>
+	
+	<div class="card mt-3">
+		<div class="btn-dd-header pl-2 pr-0" id="yearPeriod">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseYear" aria-expanded="false" aria-controls="collapseYear">
+				<span class="btn-dd-text">- Год -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseYear" class="collapse" aria-labelledby="yearPeriod">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_year_target_id }}
+			</div>
+		</div>
+	</div>
+	<div class="card mt-3">
+		<div class="btn-dd-header pl-1 pr-0" id="headingIdeorgaphic">
+			<a class="btn btn-link btn-sm d-flex justify-content-between align-items-center text-dark pr-1 pb-0" type="a" data-toggle="collapse" data-target="#collapseIdeorgaphic" aria-expanded="false" aria-controls="collapseIdeorgaphic">
+				<span class="btn-dd-text">- Тема -</span>
+				<span class="btn-dd-shevron">
+					<i class="fas fa-chevron-down"></i>
+				</span>
+			</a>
+		</div>
+		<div id="collapseIdeorgaphic" class="collapse" aria-labelledby="headingIdeorgaphic">
+			<div class="card-body pb-0 pt-0 card-body-scroll">
+				{{ form.field_ideographic_terms_target_id }}
+			</div>
+		</div>
+	</div>
+	{{ form.title_op }}
+	{{ form.actions }}
+	<button id="reset-search-filters" type="reset" class="btn btn-secondary btn-sm btn-reset-filters">
+		<i class="bi bi-funnel"></i>
+		Очистить фильтр</button>
+</div>

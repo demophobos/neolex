@@ -1,0 +1,11 @@
+name: 'Menu link Modal'
+type: module
+description: 'Allow you to open internal menu links in modal.'
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - drupal:menu_link_content
+
+# Information added by Drupal.org packaging script on 2021-07-30
+version: '8.x-2.0'
+project: 'menu_link_modal'
+datestamp: 1627638055

@@ -1,0 +1,15 @@
+<div class="sense">
+	{% if content.field_index.0 %}
+		<span class="sense-index">{{content.field_index.0}}{{'.'}}</span>
+	{% endif %}
+	{{content.field_items}}
+	<div class="sense-references ml-3">{{content.field_references}}</div>
+	{% if content.field_ideographic_terms | render %}
+		<div class="ideographic-terms">
+			<span data-toggle="tooltip" data-placement="left" title="Тема" class="term-tooltip">
+				<img src="/themes/images/t-circle.png" class="term-image">
+			</span>
+			<span>{{content.field_ideographic_terms}}</span>
+		</div>
+	{% endif %}
+</div>
