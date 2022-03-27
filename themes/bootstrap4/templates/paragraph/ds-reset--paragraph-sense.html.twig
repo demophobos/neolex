@@ -6,10 +6,7 @@
 	<div class="sense-references ml-3">{{content.field_references}}</div>
 	{% if content.field_ideographic_terms | render %}
 		<div class="ideographic-terms">
-			<span data-toggle="tooltip" data-placement="left" title="Тема" class="term-tooltip">
-				<img src="/themes/images/t-circle.png" class="term-image">
-			</span>
-			<span>{{content.field_ideographic_terms}}</span>
+			<span tabindex="0" data-placement="right" data-container="body" role="button" data-toggle="popover" data-trigger="focus" data-content='Тема' class="explain-popover">{{content.field_ideographic_terms}}</span>
 		</div>
 	{% endif %}
 </div>

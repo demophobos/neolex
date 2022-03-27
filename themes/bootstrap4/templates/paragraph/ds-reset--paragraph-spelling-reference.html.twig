@@ -1,7 +1,4 @@
 <div class="spelling-references">
-	<span data-toggle="tooltip" data-placement="left" title="Орфографический вариант" class="term-tooltip">
-		<img src="/themes/images/o-circle.png" class="term-image">
-	</span>
 	{% for key, items in content.field_spelling_reference_value if key|first != '#'%}
 		<span class="badge border spelling-reference">{{ content.field_spelling_reference_value[key] }}</span>
 	{% endfor %}

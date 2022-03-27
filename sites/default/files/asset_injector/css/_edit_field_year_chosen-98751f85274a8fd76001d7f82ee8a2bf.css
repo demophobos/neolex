@@ -1,0 +1,120 @@
+#edit_field_year_chosen{
+ width:100px !important; 
+}
+
+#block-editortools > .menu {
+    margin-left: 0px;
+    padding: 0.95em 1.45em;
+}
+
+#block-editortools {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    background-color: #fcfcfa;
+    color: #0074bd;
+    text-shadow: 0 1px 0 white;
+    width: 63%;
+}
+#block-editortools > .menu > .menu-item {
+    display: inline-block;
+}
+#block-editorhelp {
+    float: right;
+}
+
+input.clipboardjs{
+    text-align: center;
+    caret-color: transparent;
+    font-size: 24px;
+    width: 30px;
+    height: 20px;
+    background-color: ghostwhite;
+}
+#edit_field_year_chosen{
+ width:100px !important; 
+}
+
+#block-editortools > .menu {
+    margin-left: 0px;
+    padding: 0.95em 1.45em;
+}
+
+#block-editortools {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    background-color: #fcfcfa;
+    color: #0074bd;
+    text-shadow: 0 1px 0 white;
+    width: 63%;
+}
+#block-editortools > .menu > .menu-item {
+    display: inline-block;
+}
+#block-editorhelp {
+    float: right;
+}
+
+input.clipboardjs{
+    text-align: center;
+    caret-color: transparent;
+    font-size: 24px;
+    width: 30px;
+    height: 20px;
+    background-color: ghostwhite;
+}
+#release-group{
+
+display: flex;
+justify-content: space-between;
+
+}
+
+#headword-option-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+}
+
+#form-entry-theadword-group{
+  display: flex;
+}
+#edit-field-index-0-value{
+
+width: 100px;
+
+margin-left: 10px;
+
+}
+.form-number{
+  width: 100px;
+  
+}
+#edit-field-type{
+
+margin-right: 10px;
+
+}
+
+.field--type-boolean{
+
+margin-right: 10px;
+
+}
+
+.form-type-checkbox{
+  align-items: center !important;
+  flex-direction: row !important;
+}
+
+.form-type-checkbox > label{
+  margin-left: 5px;
+  margin-top: 3px;
+}
+label.form-required{
+  display:none;
+}
