@@ -1,6 +1,0 @@
-label.form-required::after{
-  display:none;
-}
-label.form-required{
-  display: inline-flex;
-}

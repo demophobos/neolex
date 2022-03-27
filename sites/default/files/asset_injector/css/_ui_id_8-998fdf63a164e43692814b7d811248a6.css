@@ -1,9 +1,0 @@
-.ui-dialog-title {
-  visibility: hidden;
-}
-
-.ui-dialog-title:after{
-  content:"Таблица символов";
-  visibility: visible;
-  margin-left: -40px;
-}

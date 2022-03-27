@@ -1,9 +1,0 @@
-{% set node_id = node.id() %}
-
-<h2 class="card-title">{{title}}</h2>
-
-{% set results = drupal_view_result('_entry_history_by_vocable', 'block_1', node_id)|length %}
-
-{% if results > 0 %}
-	{{ drupal_view('_entry_history_by_vocable', 'block_1', node_id) }}
-{% endif %}

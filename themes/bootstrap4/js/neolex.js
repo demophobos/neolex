@@ -58,16 +58,12 @@ jQuery(document).ready(function($) {
     $("#edit-name").attr("placeholder", "- Имя -");
     $("input[type=email]").attr("placeholder", "- Адрес электронной почты -");
 
-    Drupal.behaviors.termTooltip = {
-        attach: function(context, settings) {
-            $('.term-tooltip').tooltip();
+    $('[data-toggle="popover"]').popover({
+        html: true,
+        content: function() {
+            var id = $(this).attr('id')
+            return $('#po' + id).html();
         }
-    };
-
-    Drupal.behaviors.functionalMarkTooltip = {
-        attach: function(context, settings) {
-            $('.new-value-tooltip').tooltip();
-        }
-    };
+    });
 
 });
