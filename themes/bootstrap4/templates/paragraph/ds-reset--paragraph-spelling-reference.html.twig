@@ -1,6 +1,8 @@
-<details class="spelling-references">
+<details class="spelling-references-details">
 	<summary>Орфографический вариант</summary>
-	{% for key, items in content.field_spelling_reference_value if key|first != '#'%}
-		<span class="badge border spelling-reference">{{ content.field_spelling_reference_value[key] }}</span>
-	{% endfor %}
+	<p class="spelling-references">
+		{% for key, items in content.field_spelling_reference_value if key|first != '#'%}
+			<span class="badge border spelling-reference">{{ content.field_spelling_reference_value[key] }}</span>
+		{% endfor %}
+	</p>
 </details>

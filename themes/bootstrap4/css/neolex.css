@@ -453,3 +453,25 @@ li[role="presentation"] {
 #tab-1048>.paragraph__column>ul {
     display: none;
 }
+
+details>p {
+    margin-left: 10px;
+}
+
+.search-result-info {
+    padding: 0.4em;
+}
+
+summary {
+    background-color: rgba(0, 0, 0, 0.03)!important;
+    border-bottom-style: ridge;
+    border-bottom-width: thin;
+}
+
+details {
+    border-radius: 0.25rem;
+}
+
+details[open]>summary {
+    margin-bottom: 10px;
+}

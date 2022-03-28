@@ -5,11 +5,11 @@
 	{{content.field_items}}
 	<div class="sense-references">{{content.field_references}}</div>
 	{% if content.field_ideographic_terms | render %}
-		<details class="see-references">
+		<details class="ideographic-terms-details">
 			<summary>Темы</summary>
-			<div class="ideographic-terms">
+			<p class="ideographic-terms">
 				{{content.field_ideographic_terms}}
-			</div>
+			</p>
 		</details>
 	{% endif %}
 </div>
