@@ -3,10 +3,13 @@
 		<span class="sense-index">{{content.field_index.0}}{{'.'}}</span>
 	{% endif %}
 	{{content.field_items}}
-	<div class="sense-references ml-3">{{content.field_references}}</div>
+	<div class="sense-references">{{content.field_references}}</div>
 	{% if content.field_ideographic_terms | render %}
-		<div class="ideographic-terms">
-			<span tabindex="0" data-placement="right" data-container="body" role="button" data-toggle="popover" data-trigger="focus" data-content='Тема' class="explain-popover">{{content.field_ideographic_terms}}</span>
-		</div>
+		<details class="see-references">
+			<summary>Темы</summary>
+			<div class="ideographic-terms">
+				{{content.field_ideographic_terms}}
+			</div>
+		</details>
 	{% endif %}
 </div>

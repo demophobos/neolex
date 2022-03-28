@@ -1,4 +1,5 @@
-<div class="see-references">
+<details class="see-references">
+	<summary>Лексико-семантические связи</summary>
 	{% for key, items in content.field_see_reference_value if key|first != '#'%}
 		{% set id = items["#cache"].keys[2] %}
 		<span class="badge border see-reference">
@@ -7,4 +8,4 @@
 			</a>
 		</span>
 	{% endfor %}
-</div>
+</details>

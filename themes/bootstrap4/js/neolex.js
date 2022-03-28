@@ -58,11 +58,4 @@ jQuery(document).ready(function($) {
     $("#edit-name").attr("placeholder", "- Имя -");
     $("input[type=email]").attr("placeholder", "- Адрес электронной почты -");
 
-    $('[data-toggle="popover"]').popover({
-        content: function() {
-            var id = $(this).attr('id')
-            return $('#po' + id).html();
-        }
-    });
-
 });
