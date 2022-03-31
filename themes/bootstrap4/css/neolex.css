@@ -456,6 +456,7 @@ li[role="presentation"] {
 
 details>p {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .search-result-info {
@@ -468,10 +469,34 @@ summary {
     border-bottom-width: thin;
 }
 
+summary.sub-entry-title {
+    background-color: #537072 !important;
+    opacity: 0.8;
+}
+
 details {
     border-radius: 0.25rem;
 }
 
 details[open]>summary {
     margin-bottom: 10px;
+}
+
+details.reference-details>summary {
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+}
+
+.headword-index {
+    margin-left: -4px;
+}
+
+.etymology-reference-old {
+    background-color: brown;
+}
+
+hr.common-references-divider {
+    border: 1px;
+    border-style: dashed;
+    border-color: rgba(0, 0, 0, 0.1);
 }

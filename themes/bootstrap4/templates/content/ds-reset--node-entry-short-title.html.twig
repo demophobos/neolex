@@ -1,5 +1,4 @@
 {% set entryType = content.field_type.0["#plain_text"]|trim %}
-{% set index = content.field_index.0 %}
 {% set newValue = content.field_has_new_value.0["#markup"] %}
 
 {% if entryType == "44" %}
@@ -17,5 +16,9 @@
 	{% set entryTitle = title %}
 {% endif %}
 <span class="headword-type-{{entryType}}">{{ entryTitle }}</span>
-<sup>{{index}}</sup>
-<span class="government">{{content.field_government}}</span>
+{% if content.field_index.0 %}
+	<span class="headword-index"><sup>{{content.field_index.0}}</sup></span>
+{% endif %}
+{% if content.field_government.0 %}
+	<span class="government">{{content.field_government.0}}</span>
+{% endif %}

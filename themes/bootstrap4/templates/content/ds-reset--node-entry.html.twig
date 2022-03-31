@@ -7,11 +7,13 @@
 	</div>
 	<div class="card-body">
 		{{ content.field_senses }}
-		{{ content.field_references }}
+		{% if content.field_references.0 %}
+			<hr class="common-references-divider">
+			{{ content.field_references }}
+		{% endif %}
 	</div>
 	<div class="card-footer">
-		{{ content.field_sort_title }}
-		{{ content.field_year }}
+		{{ content.field_year.0 }}
 	</div>
 	{{ content.content_moderation_control }}
 </div>

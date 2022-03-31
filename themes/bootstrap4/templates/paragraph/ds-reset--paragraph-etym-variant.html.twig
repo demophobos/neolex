@@ -1,0 +1,5 @@
+<span class="word-building-type badge border">{{content.field_word_building_type.0}}</span>
+<span>{{content.field_etym_variant_items}}</span>
+{% if content.field_is_questionable.0["#markup"] == "1" %}
+	<span class="is-questionable">?</span>
+{% endif %}
