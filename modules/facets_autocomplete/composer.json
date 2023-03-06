@@ -1,0 +1,14 @@
+{
+  "name": "drupal/facets_autocomplete",
+  "type": "drupal-module",
+  "description": "Adds autocomplete functionality to facets.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/facets_autocomplete",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/facets_autocomplete",
+    "source": "http://cgit.drupalcode.org/facets_autocomplete"
+  },
+  "require": { }
+}

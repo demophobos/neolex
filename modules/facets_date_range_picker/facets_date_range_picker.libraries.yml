@@ -1,0 +1,7 @@
+datepicker:
+  version: 1.x
+  js:
+    js/datepicker.js: { }
+  dependencies:
+    - core/drupal
+    - core/jquery

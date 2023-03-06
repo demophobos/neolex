@@ -1,0 +1,12 @@
+drupal.facets_autocomplete.autocomplete-widget:
+  version: VERSION
+  css:
+    base:
+      css/autocomplete-widget.css: {}
+  js:
+    js/autocomplete-widget.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupalSettings

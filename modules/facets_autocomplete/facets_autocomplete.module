@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains facets_autocomplete.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function facets_autocomplete_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the facets_autocomplete module.
+    case 'help.page.facets_autocomplete':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Adds autocomplete functionality to facets.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function facets_autocomplete_theme() {
+  return [
+    'facets_autocomplete' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+

@@ -1,0 +1,7 @@
+{% set id = content.field_entry.0["#cache"].keys[2] %}
+<span class="same-as-reference">
+	{{ content.field_entry }}
+	{% if content.field_sense_index.0 %}
+		<span class="same-as-reference-sense-index">({{content.field_sense_index.0}})</span>
+	{% endif %}
+</span>

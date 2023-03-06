@@ -1,0 +1,15 @@
+name: 'Facets Date Range Picker'
+description: 'Provides a Date Range Picker in facets.'
+package: Search
+
+type: module
+core_version_requirement: ^8.9 || ^9 || ^10
+
+dependencies:
+  - drupal:datetime_range
+  - facets:facets
+
+# Information added by Drupal.org packaging script on 2022-07-15
+version: '1.0.0-beta4'
+project: 'facets_date_range_picker'
+datestamp: 1657875638

@@ -1,0 +1,9 @@
+<h3 class="card-title">
+	{% include 'ds-reset--node-entry-print-short-title.html.twig' %}
+	<span class="header-definition">{{content.field_headword_grammar_items}}</span>
+</h3>
+{{ content.field_senses }}
+{% if content.field_references.0 %}
+	{# <hr class="common-references-divider"> #}
+	{{ content.field_references }}
+{% endif %}

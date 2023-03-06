@@ -10,42 +10,43 @@ INSTALLATION
 ------------
 1. Download and extract the clipboard.js plugin, rename extracted folder to
    "clipboard" and copy it into "sites/all/libraries". The plugin should
-   now be located at "sites/all/libraries/clipboard/src/clipboard.js". You can
+   now be located at "sites/all/libraries/clipboard.js/dist/clipboard.js". You can
    also just use 'drush cbdl' to automatically download the library.
 
 USAGE
 -----
 The Clipboard.js can be added to any text field by visiting the manage display
-page for the entity and and choosing Clipboard.js as the field formatter.
+page for the entity and choosing Clipboard.js as the field formatter.
 
-Custom text fields can also use clipboard.js using the form api or in a render
+Custom form fields can also use clipboard.js using the form api or in a render
 array using the theme function to display the element:
 
-    function example_form($form, $form_state) {
-      $form = array();
-    
-      
-      // Load clipboard.js library.
-      libraries_load('clipboard');
-    
-      
-      // Clipboard settings.      
-      $theme_variables = array(
-        'text' => t('This is the text to be copied...'), 
-        'alert_style' => 'tooltip', 
-        'alert_text' => 'Copy was successful!', 
-        'button_label' => 'Click to Copy',
-      );
+    ```PHP
+      $form['clipboardjs'] = [
+        '#theme' => 'clipboardjs_button',
+        '#value' => 'Any copyable value.',
+      ];
+    ```
 
-      
-      // Build the form or render element using the helper function:
-      $form['textfield'] = theme('clipboardjs', $theme_variables);
-    
-      
-      return $form;
-    }
+or a full example of one of the available templates e.g., clipboardjs_button,
+clipboardjs_snippet, clipboardjs_textarea or clipboardjs_textfield:
 
+    ```PHP
+    $form['clipboardjs'] = [
+      '#type' => 'item',
+      '#theme' => 'clipboardjs_textfield',
+      '#title' => $this->t('Clipboard.js Textfield'),
+      '#value' => 'Any copyable value.',
+      '#label' => $this->t('Click to copy'),
+      '#alert_style' => 'tooltip', // e.g., 'tooltip', 'alert' or 'none'
+      '#alert_text' => $this->t('Copied!'),
+    ];
+    ```
 
 CREDITS
 -------
-* Norman Kerr - [kenianbei](https://drupal.org/user/778980)
+Drupal 8/9/10 - Development, Maintenance
+* Stefan Auditor - [sanduhrs](https://www.drupal.org/u/sanduhrs)
+
+Initial Development
+* Norman Kerr - [kenianbei](https://www.drupal.org/u/kenianbei)

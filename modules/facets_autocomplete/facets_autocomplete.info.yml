@@ -1,0 +1,12 @@
+name: 'Facets autocomplete'
+type: module
+description: 'Adds autocomplete functionality to facets.'
+core_version_requirement: '^8 || ^9'
+package: 'Search'
+dependencies:
+  - facets:facets
+
+# Information added by Drupal.org packaging script on 2021-11-20
+version: '2.0.0-beta1'
+project: 'facets_autocomplete'
+datestamp: 1637423142

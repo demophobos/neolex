@@ -35,6 +35,7 @@ function entity_form_field_label_help($route_name, RouteMatchInterface $route_ma
  * Helper for building the third-party settings form.
  *
  * @param \Drupal\Core\Config\Entity\ThirdPartySettingsInterface $plugin
+ *   Plugin that supports third-party settings.
  *
  * @return array
  *   Third-party settings form.
@@ -160,8 +161,11 @@ function entity_form_field_label_field_widget_multivalue_form_alter(array &$elem
             $elements[$child][$main_property]['#title'] = $label_settings['new_label'];
           }
 
-          if (isset($elements[$child]['#title'])) {
-            $elements[$child]['#title'] = $label_settings['new_label'];
+          // In a case of the inline entity form.
+          foreach (['#title', '#field_title'] as $title_key) {
+            if (isset($elements[$child][$title_key])) {
+              $elements[$child][$title_key] = $label_settings['new_label'];
+            }
           }
         }
         break;
@@ -195,12 +199,16 @@ function entity_form_field_label_field_widget_multivalue_form_alter(array &$elem
  */
 function entity_form_field_label_preprocess_field(&$variables) {
   $entity_display = EntityViewDisplay::collectRenderDisplay($variables['element']['#object'], $variables['element']['#view_mode']);
-  $plugin = $entity_display->getRenderer($variables['element']['#field_name']);
-  if ($plugin instanceof ThirdPartySettingsInterface) {
-    $label_settings = $plugin->getThirdPartySettings('entity_form_field_label');
-    if ($label_settings && !empty($label_settings['rewrite_label'])) {
-      $variables['label'] = $label_settings['new_label'];
+  $label_settings = $variables['element']['#third_party_settings']['entity_form_field_label'] ?? [];
+
+  if (empty($label_settings)) {
+    $plugin = $entity_display->getRenderer($variables['element']['#field_name']);
+    if ($plugin instanceof ThirdPartySettingsInterface) {
+      $label_settings = $plugin->getThirdPartySettings('entity_form_field_label');
     }
+  }
+  if ($label_settings && !empty($label_settings['rewrite_label'])) {
+    $variables['label'] = $label_settings['new_label'];
   }
 }
 

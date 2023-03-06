@@ -7,15 +7,6 @@ body {
     padding-left: 10px !important;
 }
 
-footer {
-    padding: 0.5rem 0 !important;
-    margin-bottom: 0 !important;
-}
-
-label {
-    display: none;
-}
-
 .moto {
     font-family: ui-monospace;
     text-transform: uppercase;
@@ -68,65 +59,32 @@ a:hover {
 
 /* Alphabet attachement */
 
-.view-display-id-attachment_1,
-.view-display-id-attachment_2 {
-    background-color: #537072 !important;
+.num {
+    background-color: #aebbbf !important;
 }
 
-.btn-lat-group {
-    height: 25px;
-    margin-right: -10px !important;
+.num.is-active {
+    background: #2c4a52 !important;
+    border: 0 none;
 }
 
-.btn-num-group {
-    height: 25px;
+.num.is-inactive:hover {
+    background: #ffb400 !important;
+    color: #ffffff;
 }
 
-.btn-lat-group>button {
-    color: white;
-    font-weight: 700;
-    padding-top: 1px;
-    background-color: #537072 !important;
+.lat {
+    background-color: #687778 !important;
 }
 
-.btn-num-group>button {
-    color: white;
-    font-weight: 700;
-    padding-top: 1px;
-    background-color: #537072 !important;
+.lat.is-active {
+    background: #2c4a52 !important;
+    border: 0 none;
 }
 
-.dropdown-menu {
-    min-width: 3em !important;
-}
-
-.dropdown-menu {
-    background-color: #537072 !important;
-}
-
-.dropdown-menu-center {
-    right: auto !important;
-    left: 50% !important;
-    -webkit-transform: translate(-50%, 0) !important;
-    -o-transform: translate(-50%, 0) !important;
-    transform: translate(-50%, 0) !important;
-    margin-top: 30px;
-}
-
-.dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0 !important;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0 !important;
-    border-bottom: 0;
-    border-left: 0 !important;
-}
-
-.dropdown-item {
-    color: white;
-    font-weight: 700;
+.lat.is-inactive:hover {
+    background: #ffb400 !important;
+    color: #ffffff;
 }
 
 
@@ -156,8 +114,12 @@ a:hover {
     font-weight: 700;
 }
 
-.g-col:first-of-type {
-    margin-left: 15px;
+.g-col {
+    width: 20% !important;
+}
+
+.g-row {
+    margin-left: 0px !important;
 }
 
 .pager {
@@ -171,6 +133,74 @@ a:hover {
     border-radius: 0.25rem;
     justify-content: center;
 }
+
+/* Responsive glossary grid*/
+
+.columns {
+    margin-bottom: 15px;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+  }
+  
+  .columns-width {
+      -moz-column-width: 10em;
+      -webkit-column-width: 10em;
+      column-width: 10em;
+  }
+  
+  .columns-count {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .site-title{
+        display:none !important;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+     .view-new-entries{
+        display:none!important;
+    }
+  }
+  
+  @media screen and (min-width: 650px) {
+    .columns-count {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .columns-count {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .columns-count {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+  }
+  
+  .columns ul {
+    margin: 0;
+  }
+  
+  .columns li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    list-style: none;
+  }
 
 
 /* Filter */
@@ -378,8 +408,6 @@ a:hover {
 }
 
 .headword-type-43 {
-    letter-spacing: 3px;
-    display: inline-block;
     font-weight: 700;
 }
 
@@ -500,3 +528,116 @@ hr.common-references-divider {
     border-style: dashed;
     border-color: rgba(0, 0, 0, 0.1);
 }
+
+
+/* indexed search */
+
+.block-facet--glossaryaz {
+    margin-top: 16px;
+    border-radius: 0.25rem;
+}
+
+.block-facet--glossaryaz>div.item-list>ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.item-list li {
+    margin: 2px !important;
+}
+
+.block-facets .glossaryaz.yes-results {
+    background: #537072 !important;
+}
+
+.block-facets .glossaryaz {
+    min-width: 2em !important;
+    min-height: 2em !important;
+    line-height: 2em !important;
+    font-family: inherit !important;
+    font-weight: 700;
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.block-facets .glossaryaz.is-active {
+    background: #2c4a52 !important;
+    border: 0 none;
+}
+
+.special-word {
+    font-weight: 700;
+}
+
+.special-word-em {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.punct {
+    margin-left: -4px;
+}
+
+ul[data-drupal-facet-id="has_new_value"] {
+    list-style: none;
+    padding-left: 0px !important;
+    font-weight: 500;
+}
+
+.entry-card{
+	margin-top:15px;
+}
+
+.field-flexions{
+    font-size:80%;
+}
+
+li.field-etym-variant:only-child {
+    list-style: none;
+    margin-left: -30px !important;
+}
+
+.is-questionable{
+    color: firebrick;
+}
+
+ul[data-drupal-facet-id="year"], ul[data-drupal-facet-id="grammar"], ul[data-drupal-facet-id="ideographic_terms"], ul[data-drupal-facet-id="sense_index"]{
+    height: 120px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+}
+
+ul::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+ul::-webkit-scrollbar-thumb {
+    background-color: #537072;
+    outline: 1px solid #aebbbf;
+}
+
+.new-entries-row > td{
+	border-top:none !important;
+	padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.new-entries-view > .view-content{
+	margin-top:15px !important;
+}
+
+.region-sidebar-first {
+    margin-top: 17px !important;
+}
+
+.views-label-title{
+    display:none;
+}
+   

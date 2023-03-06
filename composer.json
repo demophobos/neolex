@@ -19,7 +19,10 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
-        "drupal/core-vendor-hardening": "^9.2"
+        "drupal/core-vendor-hardening": "^9.2",
+        "drupal/csv_serialization": "^2.1",
+        "drupal/entity_print": "2.x",
+        "phpoffice/phpword": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -27,7 +30,13 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true
+        }
     },
     "extra": {
         "drupal-scaffold": {

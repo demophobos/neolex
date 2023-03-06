@@ -1,0 +1,18 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/adminimal.css: {}
+      css/neolex_admin.css: {}
+
+google-fonts:
+  version: VERSION
+  css:
+    base:
+      css/adminimal_fonts.css: {}
+
+custom-styling:
+  version: VERSION
+  css:
+    theme:
+      public://adminimal-custom.css: {}

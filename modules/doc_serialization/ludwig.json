@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpoffice/phpword": {
+            "version": "v0.18.2",
+            "url": "https://github.com/PHPOffice/PHPWord/archive/0.18.2.zip"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{% set id = node.id %}
+<div class="subentry">
+	<h5>{% include 'ds-reset--node-entry-print-short-title.html.twig' %}</h5>
+	<div class="sub-entry-region m-3">
+		<div class="entry-definition-section">
+			{{ content.field_senses }}
+			{{ content.field_references }}
+		</div>
+	</div>
+</div>

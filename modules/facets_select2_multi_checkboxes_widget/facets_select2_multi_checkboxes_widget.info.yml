@@ -1,0 +1,15 @@
+type: module
+name: Facets Select2 Multi Checkboxes Widget
+description: 'Provides Select2 Multi Checkboxes Widget for Facets module.'
+package: Search
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - facets:facets (>=8.x-1.5)
+  - select2
+
+
+# Information added by Drupal.org packaging script on 2021-05-18
+version: '1.2.0'
+project: 'facets_select2_multi_checkboxes_widget'
+datestamp: 1621360183

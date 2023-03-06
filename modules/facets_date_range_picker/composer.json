@@ -1,0 +1,21 @@
+{
+    "name": "drupal/facets_date_range_picker",
+    "description": "Provides a Date Range Picker in facets.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Tim Diels (tim-diels)",
+            "homepage": "https://www.drupal.org/user/2915097",
+            "role": "Maintainer"
+        }
+    ],
+    "homepage": "https://drupal.org/project/facets_date_range_picker",
+    "support": {
+        "issues": "https://drupal.org/project/issues/facets_date_range_picker",
+        "source": "https://git.drupalcode.org/project/facets_date_range_picker"
+    },
+    "require": {
+        "drupal/facets": "^1.0 || ^2.0"
+    }
+}

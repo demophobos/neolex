@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Facets Date Range Picker module.
+ */
+
+/**
+ * Implements hook_facets_search_api_query_type_mapping_alter().
+ */
+function facets_date_range_picker_facets_search_api_query_type_mapping_alter($backend_plugin_id, array &$query_types) {
+  // Add our date range query type.
+  $query_types['date_range_picker'] = 'search_api_date_range_picker';
+  $query_types['date_picker'] = 'search_api_date_picker';
+}

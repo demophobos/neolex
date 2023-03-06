@@ -1,0 +1,9 @@
+<p class="see-references">См.:
+	{{content.field_see_reference_items}}
+	{% for key, items in content.field_see_reference_value if key|first != '#'%}
+		{% set id = items["#cache"].keys[2] %}
+		<span class="see-reference">
+			{{ content.field_see_reference_value[key] }}
+		</span>
+	{% endfor %}
+</p>

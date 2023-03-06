@@ -1,1 +1,4 @@
 <span class="divider-lb">[</span><span class="field-transcription">{{content.field_transcription_value.0}}</span><span class="divider-rb">]</span>
+{% if content.field_is_questionable.0["#markup"] == "1" %}
+	<sup class="is-questionable">?</sup>
+{% endif %}

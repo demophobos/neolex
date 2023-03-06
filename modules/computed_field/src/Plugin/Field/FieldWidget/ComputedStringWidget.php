@@ -10,7 +10,7 @@ namespace Drupal\computed_field\Plugin\Field\FieldWidget;
  *   label = @Translation("Computed (visually hidden)"),
  *   field_types = {
  *     "computed_string",
- *     "computed_string_long"
+ *     "computed_string_long",
  *   }
  * )
  */

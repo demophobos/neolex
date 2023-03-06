@@ -1,0 +1,7 @@
+<div class="field-etym-variant">
+	{% if content.field_is_questionable.0["#markup"] == "1" %}
+		<span class="is-questionable"><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>
+	{% endif %}
+	<span class="word-building-type">{{content.field_word_building_type.0}}</span>
+	{{content.field_etym_variant_items}}
+</div>

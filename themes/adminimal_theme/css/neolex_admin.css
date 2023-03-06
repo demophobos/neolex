@@ -1,0 +1,265 @@
+@media print {
+    .print-view {
+        width: 100%;
+        top: 0;
+        padding: 0;
+        margin: -1px;
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .view-filters,
+    .pager,
+    .page-title,
+    .position-container,
+    .page-title,
+    .breadcrumb,
+    .region-header,
+    .region-breadcrumb,
+    .region-pre-content,
+    .trigger {
+        display: none;
+    }
+}
+
+.field-etym-variant>a,
+.field-etym-variant>a:hover,
+.field-etym-variant>a:focus,
+.field-etym-variant>a:active {
+    text-decoration: none !important;
+    color: black !important;
+    cursor: default !important;
+}
+
+.sense {
+    margin-left: 10px;
+}
+
+.subentry {
+    margin-left: 10px;
+}
+
+.headword-type-42,
+.headword-type-506 {
+    letter-spacing: 3px;
+    display: inline-block;
+    font-weight: 100;
+}
+
+.special-word {
+    font-weight: 700;
+}
+
+.special-word-em {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.headword-type-43 {
+    font-weight: 700;
+}
+
+.sense {
+    text-align: justify;
+}
+
+.sense-index {
+    font-weight: bold;
+}
+
+.government {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.field-grammar-mark {
+    font-style: italic;
+}
+
+.punct {
+    margin-left: -4px;
+}
+
+
+/* Comment stat table: unified view for all the tables */
+
+.views-field-counter {
+    width: 1%;
+}
+
+.views-field-view-node {
+    width: 10%;
+}
+
+.views-field-uid {
+    width: 10%;
+}
+
+.views-field-revision-log {
+    width: 59%;
+}
+
+.views-field-changed {
+    width: 20%;
+}
+
+.fieldset-wrapper label {
+    display: none;
+}
+
+.form-item-created-min,
+.form-item-created-max {
+    width: 100px;
+}
+
+#edit-created-wrapper,
+#edit-changed-wrapper {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+}
+
+.es-row>td {
+    vertical-align: baseline;
+}
+
+#block-editortools-2>.menu {
+    margin-left: 0px;
+    padding: 0.95em 1.45em;
+    background: cornsilk;
+}
+
+#block-editortools-2>.menu>.menu-item {
+    display: inline-block;
+}
+
+#block-editortools-2 {
+    position: fixed;
+    right: 10%;
+    top: 4%;
+    width: 20% !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    background-color: #fcfcfa;
+    color: #0074bd;
+    text-shadow: 0 1px 0 white;
+    width: 63%;
+}
+
+input.clipboardjs {
+    text-align: center;
+    caret-color: transparent;
+    font-size: 24px;
+    width: 30px;
+    height: 20px;
+    background-color: ghostwhite;
+}
+
+
+/* Editor forms */
+
+#edit_field_year_chosen {
+    width: 100px !important;
+}
+
+#block-editortools>.menu {
+    margin-left: 0px;
+    padding: 0.95em 1.45em;
+}
+
+#block-editortools {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    background-color: #fcfcfa;
+    color: #0074bd;
+    text-shadow: 0 1px 0 white;
+    width: 63%;
+}
+
+#block-editortools>.menu>.menu-item {
+    display: inline-block;
+}
+
+#block-editorhelp {
+    float: right;
+}
+
+#edit_field_year_chosen {
+    width: 100px !important;
+}
+
+#block-editortools>.menu {
+    margin-left: 0px;
+    padding: 0.95em 1.45em;
+}
+
+#release-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headword-option-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+}
+
+#form-entry-theadword-group {
+    display: flex;
+}
+
+#edit-field-index-0-value {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.form-number {
+    width: 100px;
+}
+
+#edit-field-type {
+    margin-right: 10px;
+}
+
+.field--type-boolean {
+    margin-right: 10px;
+}
+
+.form-type-checkbox {
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+.form-type-checkbox>label {
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+label.form-required {
+    display: none;
+}
+
+caption {
+    background-color: #434343;
+    color: white;
+    padding-left: 10px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.dropbutton-multiple {
+    float: right;
+}
+
+.paragraphs-badge {
+    display: none;
+}
+
+.form--inline {
+    display: flex;
+    align-items: center;
+}

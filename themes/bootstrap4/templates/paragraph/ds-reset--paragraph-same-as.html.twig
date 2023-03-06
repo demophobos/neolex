@@ -1,11 +1,9 @@
-<span class="same-as-reference">то же, что
-</span>
 {% set id = content.field_entry.0["#cache"].keys[2] %}
-<span class="badge border same-as-reference">
+<span class="same-as-reference">
 	<a href="/node/{{id}}" class="use-ajax" data-dialog-type="bootstrap4_modal" data-dialog-options="{&quot;dialogClasses&quot;:&quot;modal-dialog-centered modal-dialog-scrollable modal-lg entry-modal relation-dialog&quot;,&quot;width&quot;:&quot;800&quot;,&quot;dialogShowHeader&quot;: false}">
 		{{ content.field_entry }}
 	</a>
 	{% if content.field_sense_index.0 %}
-		<span class="same-as-reference-sense-index">({{content.field_sense_index.0}}).</span>
+		<span class="same-as-reference-sense-index">({{content.field_sense_index.0}})</span>
 	{% endif %}
 </span>

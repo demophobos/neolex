@@ -2,7 +2,12 @@
 	<summary>Cловообразовательная справка</summary>
 	<p class="etymology-reference">
 		{% if content.field_etym_variants.0 %}
-			<span>{{content.field_etym_variants}}</span>
+			{% set count = content.field_etym_variants|length %}
+			{% if count > 1%}
+				<ul>{{content.field_etym_variants}}</ul>
+			{% else %}
+				<span>{{content.field_etym_variants}}</span>
+			{% endif %}
 		{% else %}
 			<span class="old-etymology-reference">
 				<span class="badge border">{{content.field_word_building_type.0}}</span>

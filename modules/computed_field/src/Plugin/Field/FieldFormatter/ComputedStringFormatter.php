@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   label = @Translation("Default"),
  *   field_types = {
  *     "computed_string",
- *     "computed_string_long"
+ *     "computed_string_long",
  *   }
  * )
  */
@@ -55,12 +55,12 @@ class ComputedStringFormatter extends ComputedFormatterBase {
    * @inheritdoc
    */
   protected function prepareValue($value) {
-    return preg_replace('/[\x{0300}-\x{036f}]+/u', '', $value);
-    // if ($this->getSetting('sanitized')) {
-    //   return nl2br(Html::escape($value));
-    // } else {
-    //   return nl2br($value);
-    // }
+
+    if ($this->getSetting('sanitized')) {
+      return nl2br(Html::escape($value));
+    } else {
+      return nl2br($value);
+    }
   }
 
 

@@ -1,10 +1,11 @@
 <details class="see-references-details reference-details" open>
 	<summary>Лексико-семантические связи</summary>
 	<p class="see-references">
+		{{content.field_see_reference_items}}
 		{% for key, items in content.field_see_reference_value if key|first != '#'%}
 			{% set id = items["#cache"].keys[2] %}
 			<span class="badge border see-reference">
-				<a href="/node/{{id}}">
+				<a href="/node/{{id}}" class="text-warning">
 					{{ content.field_see_reference_value[key] }}
 				</a>
 			</span>
